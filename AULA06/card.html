@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engenheiro - Jefferson Alves</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Fundo degradê */
+            background: linear-gradient(135deg, #5f6bdc, #7b4bb7);
+        }
+         
+        .card {
+            background: #f4f4f4;
+            width: 320px;
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .perfil-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: -60px;
+            border: 5px solid #f4f4f4;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .titulo {
+            color: #5f6bdc;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .habilidades {
+            margin: 15px 0;
+        }
+
+        .habilidades span {
+            display: inline-block;
+            background: #e0e4ff;
+            color: #5f6bdc;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #5f6bdc, #7b4bb7);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img 
+        src="../Aula02/assets/Men.jpg" 
+        alt="Foto Jefferson" 
+        class="perfil-img">
+
+        <h1>Jefferson Alves</h1>
+
+        <div class="titulo">Desenvolvedor FullStack & Engenheiro</div>
+
+        <p>
+            Engenheiro especializado em gerenciamento de projetos e desenvolvimento de software.
+        </p>
+
+        <div class="habilidades">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Gestão</span>
+        </div>
+
+        <a href="#contato" class="btn">Entre em Contato</a>
+
+    </div>
+
+</body>
+</html>
