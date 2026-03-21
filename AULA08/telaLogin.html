@@ -6,72 +6,191 @@
 <title>Reparai - Login</title>
 
 <style>
-body {
-    font-family: Arial;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #dfe6e9, #b2bec3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: #2aa198;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Card */
 .card {
-    background: white;
+    background: #f5f6f7;
     padding: 30px;
-    border-radius: 12px;
-    width: 320px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-h2 {
+.card h2 {
     text-align: center;
+    margin-bottom: 5px;
 }
 
-input {
+.subtitle {
+    text-align: center;
+    color: #636e72;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Google button */
+.google-btn {
     width: 100%;
     padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
+    border-radius: 10px;
+    border: 2px solid #2aa198;
+    background: transparent;
+    color: #2aa198;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.google-btn:hover {
+    background: #2aa198;
+    color: white;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #aaa;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    width: 40%;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+/* Inputs */
+.label {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
     border: 1px solid #ccc;
+    margin-top: 5px;
 }
 
-button {
+.input-group input {
+    border: none;
+    outline: none;
     width: 100%;
+}
+
+/* Botão entrar */
+.btn {
+    width: 100%;
+    margin-top: 20px;
     padding: 12px;
-    background: #2a5298;
+    background: #2aa198;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    font-weight: bold;
     cursor: pointer;
 }
 
-button:hover {
-    background: #1e3c72;
+.btn:hover {
+    background: #238b82;
 }
 
-p {
+/* Cadastro */
+.footer {
     text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
-a {
-    color: #2a5298;
+.footer a {
+    color: #2aa198;
     text-decoration: none;
+    font-weight: bold;
 }
 </style>
 </head>
 
 <body>
 
+<div class="logo">
+    <div class="logo-icon">📍</div>
+    <span>Reparaí</span>
+</div>
+
 <div class="card">
-    <h2>Reparai</h2>
+    <h2>Bem-vindo de volta!</h2>
+    <p class="subtitle">Entre para acompanhar seus reportes</p>
+
+    <button class="google-btn">Continuar com Google</button>
+
+    <div class="divider">OU</div>
 
     <input type="email" id="email" placeholder="Email">
-    <input type="password" id="senha" placeholder="Senha">
+    <input type="password" id="senha" placeholder="*******">
 
-    <button onclick="login()">Entrar</button>
+    <div class="label">Senha</div>
+    <div class="input-group">
+        <input type="password" placeholder="••••••••">
+    </div>
 
-    <p>Não tem conta? <a href="cadastro.html">Cadastrar</a></p>
+    <button class="btn">Entrar</button>
+
+    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
 </div>
 
 <script>
@@ -87,6 +206,7 @@ function login() {
     }
 }
 </script>
+
 
 </body>
 </html>
