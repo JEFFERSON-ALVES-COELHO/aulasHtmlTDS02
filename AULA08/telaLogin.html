@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reparai - Login</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e3c72;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #2a5298;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Reparai</h2>
+
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="senha" placeholder="Senha">
+
+    <button onclick="login()">Entrar</button>
+
+    <p>Não tem conta? <a href="cadastro.html">Cadastrar</a></p>
+</div>
+
+<script>
+function login() {
+    let email = document.getElementById("email").value;
+    let senha = document.getElementById("senha").value;
+
+    if(email === "" || senha === "") {
+        alert("Preencha todos os campos!");
+    } else {
+        alert("Login realizado!");
+        // window.location.href = "home.html";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,76 +1,77 @@
 <!doctype html>
 <html lang="PT-BR">
-  <cabeça>
-    <meta conjunto de caracteres="UTF-8"/>
-    <meta nome="janela de visualização"contente="largura=largura-do-dispositivo, escala-inicial=1.0"/>
-    <título>Modelo de caixa</título>
-    <estilo>
-      {
-        margem: 0;
-        acolchoamento: 0;
-        dimensionamento de caixa:caixa de borda;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
-      h1{
-        cor de fundo:azul-violeta;
-        mostrar:nenhum;
-        margem superior: 20px;
-        margem esquerda: 50px;
-        fronteira: 10pxpreto inicial;
-        acolchoamento: 50px 10px 0px 60px;
+      h1 {
+        background-color: blueviolet;
+        display: none;
+        margin-top: 20px;
+        margin-left: 50px;
+        border: 10px outset black;
+        padding: 50px 10px 0px 60px;
       }
 
-      .recipiente{
-        acolchoamento: 20px 45px;
-        cor de fundo: #ddd;
-        largura: 100%;
+      .container {
+        padding: 20px 45px;
+        background-color: #ddd;
+        width: 100%;
+      }
+      .circulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: cadetblue;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
       }
 
-      .círculo{
-        mostrar:flexível;
-        alinhar-itens:centro;
-        justificar-conteúdo:centro;
-        cor de fundo:azul-cadete;
-        largura: 80px;
-        altura: 80px;
-        raio-da-borda: 50%;
+      .container-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: blue;
+        width: 600px;
+        gap: 2px;
+        padding: 60px 20px;
       }
 
-      .contêiner-flex{
-        mostrar:flexível;
-        flexão direcional:coluna;
-        justificar-conteúdo:espaço ao redor;
-        cor de fundo:azul;
-        largura: 600px;
-        brecha: 2px;
-        acolchoamento: 60px 20px;
+      .box {
+        background-color: #fff;
+        width: 100%;
       }
+    </style>
+  </head>
+  <body>
+    <h1>Aula BoxModel</h1>
 
-      .caixa{
-        cor de fundo: #fff;
-        largura: 100%;
-      }
-
-    </estilo>
-  </cabeça>
-  <corpo>
-    <h1>Modelo de caixa Aula</h1>
-    <div aula="recipiente">
+    <div class="container">
       <h2>Trabalhando com divs</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delecto
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
         consequatur alias debitis voluptatum tenetur amet sint aliquid deleniti
         velit, eum, consequuntur, nesciunt recusandae ullam consectetur fuga
         dignissimos nulla atque quo!
       </p>
     </div>
-    <div aula="círculo">
+
+    <div class="circulo">
       <h3>DA</h3>
     </div>
-    <div aula="contêiner-flex">
-      <div aula="caixa">Caixa 1</div>
-      <div aula="caixa">Caixa 2</div>
-      <div aula="caixa">Caixa 3</div>
+
+    <div class="container-flex">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
     </div>
-  </corpo>
+  </body>
 </html>

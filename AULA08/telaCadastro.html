@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reparai - Cadastro</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    justify-content: center;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    justify-content: center;
+}
+
+button {
+    width: 100%;
+    padding: 12px;   
+    background: #11998e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+button:hover {
+    background: #0d7f73;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #11998e;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Criar Conta</h2>
+     
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="senha" placeholder="Senha">
+
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <p>Já tem conta? <a href="login.html">Voltar ao login</a></p>
+</div>
+
+<script>
+function cadastrar() {
+    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value;
+    let senha = document.getElementById("senha").value;
+
+    if(nome === "" || email === "" || senha === "") {
+        alert("Preencha todos os campos!");
+    } else {
+        alert("Cadastro realizado!");
+        window.location.href = "login.html";
+    }
+}
+</script>
+
+</body>
+</html>
