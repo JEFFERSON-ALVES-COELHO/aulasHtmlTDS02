@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-text {
+    flex: 1;
+  }
+
+  .hero-img {
+    flex: 1;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+
+  .card {
+    flex: 1;
+  }
+
+}

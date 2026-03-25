@@ -1,0 +1,139 @@
+:root {
+  --primary: #f97316;
+  --dark-blue: #1e3a5f;
+  --blue: #2b6cb0;
+  --light: #f3f4f6;
+  --text: #111827;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--text);
+}
+
+/* HEADER */
+.navbar {
+  background: var(--dark-blue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(var(--blue), var(--dark-blue));
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero h2 {
+  font-size: 26px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-img img {
+  width: 20%;
+  gap: 20px;
+  }
+
+/* BENEFITS */
+.benefits {
+  padding: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 24px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonial-card {
+  background: #e5e7eb;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.role {
+  color: gray;
+}
+
+/* FOOTER */
+footer {
+  background: var(--dark-blue);
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
