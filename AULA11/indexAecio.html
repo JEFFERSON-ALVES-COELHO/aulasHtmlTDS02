@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 Aecio - JavaScript</title>
+    </head>
+<body>
+     <script> 
+     
+        //Utilização do console.log();
+        /*
+        var x = "Valor da variável ";
+        console.log('Hello, World!');
+         console.log(200);
+          console.log(50 + 40)
+           console.log(x);
+            console.log('Olá' , x);
+            */
+                         
+            // Variaveis e Tipos de Dados em JavaScript
+            /*
+            let idade = 30; // Variável do tipo número
+            let nome = "Jefferson"; // Variável do tipo string
+
+            let texto = "Isso é um novo texto"
+            let numeroInteiro = 42
+            let numeroDecimal = 3.14
+            let estaChovendo = true; // Variável do tipo booleano true ou false
+
+            console.log(typeof numeroDecimal) // Exibe o tipo de dado da variável
+            
+            console.log(`O meu nome é ${nome}. E minha idade é ${idade} anos.`); // Utilizando Template String para exibir variáveis
+
+            console.log(nome, idade);
+            */
+
+            // Funções (com parametros e retorno)
+            /*
+            function saudacao(){ // função sem parâmetros
+                console.log("Olá, seja bem-vindo à aula de JavaScript!");
+                console.log("Hoje é dia 27.");
+                console.log("Ontem foi dia 26");
+            }
+
+             function saudacao2(nome, dia){ // função com parâmetros
+                console.log("Olá, ", + nome);
+                console.log("Hoje é dia 27." + dia);
+                dia--;
+
+                if(dia == 0){
+                    dia = 31;
+                }
+
+
+                console.log("Ontem foi dia 26" + dia);
+            }
+
+            //saudacao2(Jefferson, 27); // Chamando a função para executar o código dentro dela
+
+
+            function soma(a, b){ // função com parâmetros e retorno
+                return = a + b;// Retorna o resultado da soma
+             
+            }
+            
+            let resultado = soma(10, 8); // Armazenando o resultado da função soma em uma variável
+            */
+
+            // atividade rapida
+            // com a variavel 'nota', decida se o aluno foi aprovado ou reprovado, considerando a média de 7 para aprovação
+            // caso seja reprovado , imforme o quanto faltou para ele alcançar a media (7)
+
+            function verificarAprovacao(nota){
+                let media = 7;
+                if(nota >= media){
+                    console.log("Aluno aprovado!");
+                } else {
+                    let faltou = media - nota;
+                    console.log(`Aluno reprovado! Faltou ${faltou} pontos para alcançar a média.`);
+                }
+
+            }
+
+    
+                verificarAprovacao(6.5); // Chamando a função para verificar a aprovação do aluno
+                verificarAprovacao(8.0); // Chamando a função para verificar a aprovação do aluno
+                verificarAprovacao(5.0); // Chamando a função para verificar a aprovação do aluno
+
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 - JavaScript</title>
+    <script>
+        //Criando função JS
+        function escreverConsole(){
+            console.log('Escrevendo no console apenas quando aciono uma função!');
+        }
+
+        function somar(x, y){
+            let resultado = x + y;
+            //Console não é retorno .... apenas //escrevendo no console do navegador
+            console.log('O resultado da soma é: ' + resultado);
+            return x + y;
+
+            //Template String
+            alert(`O resultado da soma é: ${resultado}`);
+        }
+    </script>
+</head>
+<body>
+    <!--Utilização de JavaScript Inline (não recomendado)-->
+    <button onclick="alert('Cliquei no Botão Clique aqui!')">Clique aqui</button>
+
+     <button onclick="console.log('Escrever no console!')">Clique no console.log</button>
+     
+     <button onclick="somar(50, 54)">Somar dois numeros</button>
+     <script> 
+        //Escrevendo no console do navegador
+        console.log('Hello, World!');
+        //Chamando a função para escrever no console;
+        escreverConsole();
+        //chamar a função de soma
+        somar(5, 10);
+     </script>
+</body>
+</html>
