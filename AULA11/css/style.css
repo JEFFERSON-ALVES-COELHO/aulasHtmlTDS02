@@ -1,0 +1,8 @@
+.invisivel {
+    display: none;
+}
+
+.temaEscuro {
+    background-color: black;
+    color: #fff;
+}
